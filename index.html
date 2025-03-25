@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>VALO guia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>VALO guia</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <a name="inicio"></a>
+    <header>
+        <div class="navbar">
+          <div class="logo"><a href="#">VALO Guia</a></div>
+           <ul class="links">
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#posiciones">POSICIONES</a></li>
+            <li><a href="#tips">TIPS</a></li>
+            <li><a href="pagina2.html">REGISTRATE</a></li>
+           </ul>
+          <a href="#" class="action_btn">Empezar</a>
+          <div class="toggle_btn">
+              <i class="fa-solid fa-bars"></i>
+           </div>
+          </div>
+  
+          <div class="dropdown_menu">
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#posiciones">POSICIONES</a></li>
+            <li><a href="#tips">TIPS</a></li>
+            <li><a href="pagina2.html">REGISTRATE</a></li>
+            <li><a href="#" class="action_btn">Empezar</a></li>
+          </div>
+      </header>
+  
+      <main>
+          <section id="hero">
+          <h1><b>Bienvenido</b></h1> 
+          <p>
+            <strong>Hola hijo de puta estas cansado de ser un fraca que no sabe tirar un humo, disparar agachado y no dar una bala? <br/>
+            Tranquilo putita aca tenemos una guia con simples pasos para que no seas la vergúenza de tu equipo.</strong>
+          </section>
+      </main>
+  
+      <script>
+          const toggle_Btn = document.querySelector('.toggle_btn')
+          const toggle_BtnIcon = document.querySelector('.toggle_btn i')
+          const dropDown_Menu = document.querySelector('.dropdown_menu')
+  
+          toggle_Btn.onclick = function () {
+              dropDown_Menu.classList.toggle('open')
+              const isOpen = dropDown_Menu.classList.contains('open')
+  
+              toggle_BtnIcon.classList = isOpen
+              ? 'fa-solid fa-xmark'
+              : 'fa-solid fa-bars'
+          }
+      </script>
+
+ <br><br><br><br><br>
+
+ <center>
+ <h2 class="fondito">COSAS QUE HACES MAL</h2>
+ </center>
+
+ <br>
+
+ <ul class="lista2">
+    <li>❌PONES LOS HUMOS COMO EL ORTO SOLO NOS TAPAS LA VISIÓN A NOSOTROS 🤬</li>
+ </br>
+    <li>❌PICKEAS DUELISTA NO HACES ENTRY Y NO PEGAS UNA BALA GIL DEL ORTO </li>
+ </br>
+    <li>❌NO TE AGACHES AL DISPARAR SIEMPRE LA MIRA A LA CABEZA</li>
+ </ul>
+
+ 
+ <br><br><br><br><br><br><br><br><br><br><br>
+ 
+ <a name="posiciones"></a>
+ <h2 class="h2titulo">HUMOS MAPAS HAVEN</h2>
+
+ <br><br>
+ 
+ <center>
+    <img class="imagen1"  src="humos.png" alt="haven" width="900px" height="500px">
+    <img class="imagen1" src="SMOKE.jpg1.jpg" alt="smoke" width="900px" height="500px">
+ </center>
+
+ <br>
+
+ <p1>Estos serian los lugares donde tenes que poner los humos, tapando la entrada de <b>CT</b> y de <b>HEAVEN</b>.</p1>
+
+ <br><br><br><br><br><br>
+ 
+ <h2 class="h2titulo">INSTAPICKEAR DUELISTA</h2>
+
+ <br>
+
+ <p1>Algo que haces mucho es instapickear duelista sin saber usarlo o sin saber la importancia de un duelista en la partida. Es algo racional, no te podes pickear un personaje cuya función es abrir site descontando enemigos si no pegas</p1>
+ <br>
+ <p1>una bala y el recoil se te va a la mierda.</p1>
+
+ <br><br><br><br><br>
+
+ <a name="tips"></a>
+
+ <center>
+   <h3>PERSONAJES QUE TE RECOMIENDO USAR</h3>
+   <br>
+   <img class="imagen2" src="tierlist.png" alt="personaje">
+ </center>
+
+ <br><br><br><br><br><br>
+
+ <h2 class="h2titulo">ERROR AL APUNTAR</h2>
+
+ <br>
+
+ <p1>No te tenes que agachar cuando disparas, tampoco tenes que ir viendo el piso. Siempre con la mira a la altura de la cabeza de los enemigos y apuntando en angulos posibles de que aparezcan enemigos.</p1>
+
+ <br><br>
+
+ <center>
+ <video width="900" height="500" controls >
+     <source src="formacorrecta.mp4" type="video/mp4">
+ </video>
+ </center>
+
+ <center>
+ <p1><b>Esta es una demostracion de como NO mirar y como SI mirar</b></p1>
+ </center>
+
+ <br><br>
+
+ <p1>Y cuando disparas no tenes que mantener el click del disparo, anda tocando de apoco para asi las balas no se dispersen y poder darle todo al enemigo.</p1>
+  
+ <br><br><br><br><br><br>
+
+ <footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="#inicio">Inicio</a></li>
+                <li><a href="#posiciones">Posiciones</a></li>
+                <li><a href="#tips">Tips</a></li>
+                <li><a href="pagina2.html">Registrate</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2025; Diseñado por <span class="designer">Tito Calderon</span></p>
+    </div>
+</footer>
+
+ </body>
+</html>
