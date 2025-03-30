@@ -36,6 +36,10 @@ body::after {
 html {
     background-color: #dddddd; /* Continúa con el fondo blanco */
 }
+.body2 {
+    background: url(https://img.freepik.com/foto-gratis/resumen-superficie-texturas-muro-piedra-hormigon-blanco_74190-8189.jpg?t=st=1743321253~exp=1743324853~hmac=5ffaf86c9f8c45b76751d693e76d36081f9300fafcb2392a34096447d4e2e548&w=996);
+}
+
 
 footer{
     background-color: #111;
@@ -248,6 +252,9 @@ section#hero{
     .imagen2 {
         display: block;
     }
+    .imagen3 {
+        display: block;
+    }
 }
 
 @media (max-width: 576px){
@@ -278,6 +285,14 @@ video {
     font-size: 17px;
     text-align: center; /* Centra el texto dentro de la lista */
 }
+p {
+    font-family: "Poppins";
+}
+
+.h1estilo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
 
 p1 {
     font-family: 'Verdana';
@@ -296,8 +311,18 @@ p1 {
     background-position: center; 
     border-radius: 10px; 
 }
+
+@media (max-width: 600px) {
+    .fondito {
+        font-size: 24px;
+        padding: 15px;
+        background-size: cover;  
+    }
+}
+
 .h2titulo {
     text-indent: 20px;
+    font-family: "Poppins", sans-serif;
 }
 
 h3{
@@ -317,4 +342,66 @@ h3{
     border-width: 5px;
     border-style: solid;
     border-radius: 10px;
+}
+
+section#imgs {
+    display: flex;
+    width: 1000px; 
+    height: 430px;
+}
+
+section#imgs img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+
+section#imgs img:hover {
+    cursor: crosshair;
+    width: 250px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+@media (max-width: 1024px) {
+    section#imgs {
+        width: 90%; 
+        gap: 3px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    section#imgs {
+        width: 100%; 
+        height: auto;
+    }
+
+    section#imgs img {
+        max-width: 120px; 
+    }
+
+    section#imgs img:hover {
+        width: 180px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    section#imgs {
+        width: 80%;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    section#imgs img {
+        width: 80%; 
+        max-width: 300px; 
+    }
+
+    section#imgs img:hover {
+        width: 90%;
+    }
 }
