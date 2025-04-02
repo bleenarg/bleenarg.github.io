@@ -12,7 +12,7 @@
     background-position: center;
 }
 */
-body {
+body.index {
     margin: 0;
     height: 100vh;
     background: url(omenn.jpg);
@@ -23,23 +23,33 @@ body {
     position: relative; 
 }
 
-body::after {
+body.index::after {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0; /* Asegura que el degradado se aplique a todo el ancho */
-    width: 100%; /* Asegura que el degradado ocupe todo el ancho */
-    height: 5vh; /* Controla la altura del degradado */
+    left: 0; /* degradado se aplique a todo el ancho */
+    width: 100%; /* egradado ocupe todo el ancho */
+    height: 5vh; /* altura del degradado #0f1923*/
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(223, 223, 223) 100%);
 }
 
-html {
-    background-color: #dddddd; /* Continúa con el fondo blanco */
-}
-.body2 {
-    background: url(https://img.freepik.com/foto-gratis/resumen-superficie-texturas-muro-piedra-hormigon-blanco_74190-8189.jpg?t=st=1743321253~exp=1743324853~hmac=5ffaf86c9f8c45b76751d693e76d36081f9300fafcb2392a34096447d4e2e548&w=996);
+html{
+    background-color: #dddddd;
 }
 
+
+body.pagina2 {
+    background: url('Valorant_logo_-_pink_color_version.svg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.pagina3 {
+    background: url('https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/122e6caea8b2a2dbb6d6e71eea4e24effab342da-5120x574.png?auto=format&fit=fill&q=80&w=1905');
+    background-repeat: no-repeat;
+    background-size: contain; /* Mantiene la proporción original de la imagen sin estirarla ni achicarla */
+    background-color: #0f1923; /* Establece el fondo color #0f1923 para el resto de la página */
+    background-position: center 125px; /* Desplaza la imagen 50px hacia abajo, puedes ajustar este valor */
+}
 
 footer{
     background-color: #111;
@@ -270,15 +280,15 @@ img {
 }
 img {
     width: 100%;
-    max-width: 780px; /* Ajustá según el tamaño máximo que querés */
+    max-width: 780px;
     height: auto;
 }
 video {
     max-width: 100%;
     height: auto;
     display: block;
+    margin: 0 auto;
 }
-
 
 .lista2{
     font-family: "Poppins", sans-serif;
@@ -292,12 +302,52 @@ p {
 .h1estilo {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.h1estilo2{
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 750;
+    color: #ffffff;
+    margin-left: 20px;
 }
 
 p1 {
     font-family: 'Verdana';
     text-indent: 20px;
     margin-left: 20px;
+}
+p2 {
+    font-family: 'Verdana';
+    text-indent: 20px;
+    margin-left: 20px;
+}
+
+.logoimg{
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    margin-left: 10px; /* Ajusta el margen izquierdo según sea necesario */
+    display: flex;
+    padding-top: 40px; /* Mueve el logo un poco hacia abajo */
+}
+
+.logo{
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    white-space: nowrap;
+    gap: 5px;
+    font-family: inherit; /* Mantiene la tipografía original */
+    font-size: inherit; /* Mantiene el tamaño de la fuente */
+    font-weight: inherit; /* Mantiene el grosor de la fuente */
 }
 
 .fondito{
@@ -329,10 +379,18 @@ h3{
     color: purple;
     font-size: 19px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    text-align: center;
 }
+
+video{
+    width: 900px;
+    height: 500px;
+}
+
 .imagen1 {
     border-color: purple;
-    border-width: 10px;
+    border-width: 6px;
     border-style: solid;
     border-radius: 10px;
 }
@@ -342,6 +400,8 @@ h3{
     border-width: 5px;
     border-style: solid;
     border-radius: 10px;
+    display: block;
+    margin: 0 auto;
 }
 
 section#imgs {
@@ -354,7 +414,7 @@ section#imgs img {
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
-    opacity: 0.8;
+    opacity: 1;
     transition: 0.5s ease;
 }
 
@@ -404,4 +464,4 @@ section#imgs img:hover {
     section#imgs img:hover {
         width: 90%;
     }
-}
+} 
